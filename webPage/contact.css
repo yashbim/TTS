@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .contact1{
+    padding-left: 100px;
+  }
+  
+
+  .contact1_subheading{
+    text-align:left;
+    font-size:100px;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    color:#1A237E;
+  }
+
+  .contact1_text{
+    color:#1A237E;
+    font-size:50px;
+  }

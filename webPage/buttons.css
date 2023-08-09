@@ -1,0 +1,85 @@
+/* blue hover green */
+
+.btn_type1 {
+    display: inline-block;
+    background-color: #CDDC39;
+    color: #1A237E;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 30px;
+  }
+  
+  .btn_type1:hover {
+    background-color: #1A237E;
+    color:#CDDC39 ;
+    transform: scale(1.2);
+  }
+
+
+
+
+/* green hover grey */
+
+.btn_type2 {
+    display: inline-block;
+    background-color: #CDDC39;
+    color: #424242;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 30px;
+  }
+  
+  .btn_type2:hover {
+    background-color:rgba(66, 66, 66,1) ;
+    color:#CDDC39 ;
+    transform: scale(1.2);
+  }
+
+  /* grey hover blue */
+
+  .btn_type3 {
+    display: inline-block;
+    background-color: #424242;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 30px;
+  }
+  
+  .btn_type3:hover {
+    background-color:#1A237E ;
+    color:#CDDC39 ;
+    transform: scale(1.2);
+  }
+
+   /* blue hover grey */
+
+   .btn_type4 {
+    display: inline-block;
+    background-color: #1A237E;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 30px;
+  }
+  
+  .btn_type4:hover {
+    background-color:#424242 ;
+    color:#CDDC39 ;
+    transform: scale(1.2);
+  }
+
+
+
+  .centered_button{
+    text-align: center;
+  }
+

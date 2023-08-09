@@ -1,0 +1,28 @@
+<div class="about-left">
+            <p class="we_are">We are,</p>
+            <p class="we_are_content">the island's premier provider of dyeing and finishing services, offering a wide range of options for fabric coloring and other industrial accessories. </p>
+            <p>For more information, click on the 'services' icon for a detailed approach on what we provide.</p>
+        </div>
+        <div class="about-right">
+            <img src="https://live.staticflickr.com/65535/52965894650_fed03e4cec_m.jpg" alt="About Us Image">
+        </div>
+
+
+
+  .about-left {
+    width: 50%;
+    flex: 0 0 50%; 
+    max-width: 48%; 
+  }
+
+
+  .about-right {
+    width: 50%;
+    flex: 0 0 50%; 
+    max-width: 48%; 
+    
+  }
+
+
+
+To be the most trusted partner in dying and finishing through innovation, while creating value and building strategic relationships to attain leadership in the region whilst meeting stake holder expectations

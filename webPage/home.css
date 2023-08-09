@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+
+  .hero {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .hero-video video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4); /* Adjust the brightness value to darken the video */
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0; /* Ensure the overlay is behind the video */
+  }
+  
+  .hero-text {
+    text-align: center;
+    color: #CDDC39;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 90px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  
+  
+
+  .about {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    flex-wrap: wrap; 
+  }
+  
+  .about-text {
+    width: 50%;
+    flex: 0 0 50%; 
+    max-width: 48%; 
+  }
+  
+  
+  .about-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #1A237E; 
+    text-align: center;
+  }
+  
+  .about-text p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .about-img {
+    width: 50%;
+    flex: 0 0 50%; 
+    max-width: 48%; 
+  }
+  
+  .about-img img {
+    width: 100%;
+  }
+  
+
+.mini_heading_div{
+    font-size: 25px;
+    padding: 20px;
+}
+
+
+.customer_subtopic{
+  text-align:center;
+}
+
+
+.subheading{
+  font-size: 30px;
+  margin-top: 20px;
+  color: #1A237E;
+}
+
+.subheading_text{
+  font-size:20px;
+  text-align: center;
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+
+
+
+
+
+
+
+
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center the tiles horizontally */
+  gap: 20px; /* space between the tiles */
+  padding: 0 40px; /* space on the left and right sides */
+  background-color: #ffffff; /* optional background color for visual clarity */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.product-tile {
+  flex: 0 0 calc(50% - 40px); /* 50% for 2 items per row, 40px for space on the sides */
+  box-sizing: border-box;
+  border: 3px solid #1A237E; /* border around each product tile */
+  border-radius: 10px;
+  padding: 10px; /* padding inside each product tile */
+  text-align: center; /* center alignment of text */
+}
+
+
+
+
+
+.product-tile img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* space below the image */
+}
+
+.product-tile h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.product-tile p {
+  font-size: 16px;
+}
+
+
+
+
+
+.img-gallery {
+  background-color: #ffffff;
+}
+
+.img-gallery-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.image-gallery {
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.image-container {
+  height: 200px; /* Set a fixed height for the image container */
+  overflow: hidden; /* Hide any overflow */
+  margin-bottom: 20px;
+}
+
+.image-gallery img {
+  width: 100%; /* Set the width to occupy the full container */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  margin: 0; /* Remove any default margin */
+}
+
+.image-gallery h2 {
+  font-size: 35px;
+  color: #1a237e;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.image-gallery p {
+  font-size: 18px;
+  color: #a5a5a5;
+  text-align: start;
+}
