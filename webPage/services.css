@@ -77,7 +77,54 @@
    }
     
   
-  
-  
-  
+
+   /* #############
+   
+          grid
+          
+    ###############*/
+
+
+
+
+
+   /* #############
+   
+       description
+          
+    ###############*/
+
+
+
+.longsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  flex-wrap: wrap; 
+}
+
+.service_text {
+  width: 50%;
+  flex: 0 0 50%; 
+  max-width: 48%; 
+}
+
+.service_text h1{
+  margin-bottom: 10px;
+}
+
+
+.service_img {
+  width: 50%;
+  flex: 0 0 50%; 
+  max-width: 48%; 
+
+}
+
+.about-img img {
+  width: 100%;
+}
+
+
   
