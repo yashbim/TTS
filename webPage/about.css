@@ -6,6 +6,7 @@
   
   body {
     font-family: 'Montserrat', sans-serif;
+    
   }
 
   .about-part1 {
@@ -197,11 +198,18 @@
 
 }
 
-.qualities-grid {
+.container-qualities {  
+  margin: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . ."
+    ". . . .";
 }
+
 
 .quality-card {
   text-align: center;
