@@ -66,66 +66,6 @@
   padding: 100px;
 }
 
-
-
-
-
-
-.vision_mission {
-  display: flex;
-  background-color: #ffffff;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
-  flex-wrap: wrap;
-  gap: 20px; /* Add gap between the boxes */
-}
-
-.vision,
-.mission {
-  width: 50%;
-  flex-basis: calc(50% - 10px); /* Adjusted flex-basis calculation */
-  max-width: calc(50% - 10px); /* Adjusted max-width calculation */
-  text-align: center;
-  background-color: #CDDC39;
-  border-radius: 20px;
-  padding-bottom: 15px;
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
-}
-
-
-.v_subheading,
-.m_subheading {
-  font-size: 40px;
-  color: #1A237E;
-  background-color: #CDDC39;
-  border-radius: 15px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  margin: 30px auto;
-  width: fit-content;
-  padding: 10px 20px;
-}
-
-.v_subheading:hover,
-.m_subheading:hover {
-  background-color:rgba(66, 66, 66,1) ;
-  color:#ffffff ;
-  transform: scale(1.05);
-}
-
-.v_content,
-.m_content {
-  color: black;
-  font-size: 25px;
-  margin-top: 15px;
-  text-align: center;
-  padding: 0 20px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-
 .hero-text {
   text-align: center;
   color: #CDDC39;
@@ -243,4 +183,62 @@
 }
 
 
+/* vision mission */
 
+.vision_mission{
+  align-items: center;
+}
+
+.container_vm {  
+  margin: 20px;
+  align-items: c;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". .";
+}
+
+
+.vision,
+.mission {
+  text-align: center;
+  background-color: #CDDC39;
+  border-radius: 20px;
+  padding-bottom: 15px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+
+
+.v_subheading,
+.m_subheading {
+  font-size: 40px;
+  color: #1A237E;
+  background-color: #CDDC39;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 30px auto;
+  width: fit-content;
+  padding: 10px 20px;
+}
+
+.v_subheading:hover,
+.m_subheading:hover {
+  background-color:rgba(66, 66, 66,1) ;
+  color:#ffffff ;
+  transform: scale(1.05);
+}
+
+.v_content,
+.m_content {
+  color: black;
+  font-size: 25px;
+  margin-top: 15px;
+  text-align: center;
+  padding: 0 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+} 
