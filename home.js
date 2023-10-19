@@ -1,6 +1,20 @@
 //Loading JSON data
 
-fetch("services.json")
+
+fetch("home.json")
+    .then(response => response.json())
+    .then(home => {
+        console.log(home)
+        // Access service from json for prodcut name
+        const aboutDescription = home.aboutus;
+
+        // Insert into html about section
+        document.getElementById('aboutdescription').textContent = aboutDescription.description;
+
+    })
+
+
+    fetch("services.json")
     .then(response => response.json())
     .then(services => {
         console.log(services)
@@ -12,7 +26,8 @@ fetch("services.json")
 
         // Access service from json for product description
         const service1 = services.product1;
-1        
+        const service2 = services.product2;
+        const service3 = services.product3;
 
         // Insert into html product name
         document.getElementById('product1name').textContent=productname1.name;
