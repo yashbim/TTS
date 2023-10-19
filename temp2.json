@@ -1,0 +1,11 @@
+{
+    "product1": {
+      "name": "AWS",
+      "description": "Amazon Web Services"
+    },
+    "product2": {
+      "name": "Product Name 2",
+      "description": "Description for Product 2"
+    }
+  }
+  
