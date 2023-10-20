@@ -15,15 +15,6 @@ fetch('services.json')
         const productname6 = services.product6;
         const productname7 = services.product7;
 
-        // Access service from json for product description
-        const service1 = services.product1;
-        const service2 = services.product2;
-        const service3 = services.product3;
-        const service4 = services.product4;
-        const service5 = services.product5;
-        const service6 = services.product6;
-        const service7 = services.product7;
-
         // Insert into html product name
         document.getElementById('h1').textContent=productname1.name;
         document.getElementById('h2').textContent=productname2.name;
@@ -32,6 +23,15 @@ fetch('services.json')
         document.getElementById('h5').textContent=productname5.name;
         document.getElementById('h6').textContent=productname6.name;
         document.getElementById('h7').textContent=productname7.name;
+
+        // Access service from json for product description
+        const service1 = services.product1;
+        const service2 = services.product2;
+        const service3 = services.product3;
+        const service4 = services.product4;
+        const service5 = services.product5;
+        const service6 = services.product6;
+        const service7 = services.product7;
 
         // Insert into html product description
 

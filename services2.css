@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* .subheading{
+    font-size: 30px;
+    color: #1A237E;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .values{
+    background-color: #CDDC39;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  } */
+
+  /* Heading hero area */
+
+  .hero {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .hero-video video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4); /* Adjust the brightness value to darken the video */
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0; /* Ensure the overlay is behind the video */
+  }
+  
+  .hero-text {
+    text-align: center;
+    color: #CDDC39;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 90px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 40px;
+    margin-bottom: 40px;
+   }
+    
+  
+
+   /* #############
+   
+          grid
+          
+    ###############*/
+
+
+
+
+
+   /* #############
+   
+       description
+          
+    ###############*/
+
+
+
+.longsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  flex-wrap: wrap; 
+}
+
+.service_text {
+  width: 50%;
+  flex: 0 0 50%; 
+  max-width: 48%; 
+}
+
+.service_text h1{
+  margin-bottom: 10px;
+}
+
+
+.service_img {
+  width: 50%;
+  flex: 0 0 50%; 
+  max-width: 48%; 
+
+}
+
+.service_img img{
+  height: 300px;
+  width: 500px;
+  width: 100%;
+}
+
+
+
+  
+.container {  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  
