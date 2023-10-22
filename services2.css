@@ -6,46 +6,7 @@
   
   body {
     font-family: 'Montserrat', sans-serif;
-  }
-
-  /* .subheading{
-    font-size: 30px;
-    color: #1A237E;
-    text-align: center;
-    font-size: 40px;
-  }
-  
-  .values{
-    background-color: #CDDC39;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  } */
-
-  /* Heading hero area */
-
-  .hero {
-    height: 650px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  
-  .hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .hero-video video {
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    filter: brightness(0.4); /* Adjust the brightness value to darken the video */
-  }
+  } 
   
   .hero::before {
     content: "";
@@ -74,68 +35,47 @@
   .hero-text p {
     font-size: 40px;
     margin-bottom: 40px;
-   }
+   } 
+
+
+  .flex-container-services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+    }
+
+    .flex-items-services{
+      border: #CDDC39;
+      border-width: 5px;
+    }
     
-  
+    .flex-items-services:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    }
+    
+    .flex-items-services:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    }
+    
+    .flex-items-services img{
+      width: 500px;
+      height: 300px;
+      object-fit: cover;
+    }
 
-   /* #############
-   
-          grid
-          
-    ###############*/
-
-
-
-
-
-   /* #############
-   
-       description
-          
-    ###############*/
-
-
-
-.longsection {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 100px;
-  flex-wrap: wrap; 
-}
-
-.service_text {
-  width: 50%;
-  flex: 0 0 50%; 
-  max-width: 48%; 
-}
-
-.service_text h1{
-  margin-bottom: 10px;
-}
-
-
-.service_img {
-  width: 50%;
-  flex: 0 0 50%; 
-  max-width: 48%; 
-
-}
-
-.service_img img{
-  height: 300px;
-  width: 500px;
-  width: 100%;
-}
-
-
-
-  
-.container {  
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-  }
-  
+    .flex-items-services p{
+      text-align: center;
+    }
