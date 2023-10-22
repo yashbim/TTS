@@ -6,22 +6,7 @@
   
   body {
     font-family: 'Montserrat', sans-serif;
-  }
-
-  /* .subheading{
-    font-size: 30px;
-    color: #1A237E;
-    text-align: center;
-    font-size: 40px;
-  }
-  
-  .values{
-    background-color: #CDDC39;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  } */
-
-  /* Heading hero area */
+  } 
 
   .hero {
     height: 650px;
@@ -74,60 +59,54 @@
   .hero-text p {
     font-size: 40px;
     margin-bottom: 40px;
-   }
+   } 
+
+
+  .flex-container-services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+    }
+
+    .flex-items-services{
+      border: 5px solid;
+      border-color: #1A237E;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
     
-  
+    .flex-items-services:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    }
+    
+    .flex-items-services:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    }
+    
+    .flex-items-services img{
+      width: 500px;
+      height: 300px;
+      object-fit: cover;
+    }
 
-   /* #############
-   
-          grid
-          
-    ###############*/
+    .flex-items-services p{
+      text-align: center;
+    }
 
-
-
-
-
-   /* #############
-   
-       description
-          
-    ###############*/
-
-
-
-.longsection {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 100px;
-  flex-wrap: wrap; 
-}
-
-.service_text {
-  width: 50%;
-  flex: 0 0 50%; 
-  max-width: 48%; 
-}
-
-.service_text h1{
-  margin-bottom: 10px;
-}
-
-
-.service_img {
-  width: 50%;
-  flex: 0 0 50%; 
-  max-width: 48%; 
-
-}
-
-.service_img img{
-  height: 300px;
-  width: 500px;
-  width: 100%;
-}
-
-
-
-  
+    .flex-items-services h1{
+      text-align: center;
+    }
