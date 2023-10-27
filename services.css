@@ -72,11 +72,13 @@
     }
 
     .flex-items-services{
+      max-width: 550px;
       border: 5px solid;
       border-color: #1A237E;
       border-radius: 10px;
-      padding: 20px;
+      /* padding: 20px; */
       margin-bottom: 30px;
+      align-items: center;
     }
     
     .flex-items-services:nth-child(1) {
@@ -101,10 +103,16 @@
       width: 500px;
       height: 300px;
       object-fit: cover;
+      padding: 20px;
+      margin: 20px;
     }
 
     .flex-items-services p{
       text-align: center;
+      padding-top: 20px;
+      font-size: large;
+      font-weight: bold;
+
     }
 
     .flex-items-services h1{
