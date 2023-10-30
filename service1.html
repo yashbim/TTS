@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<style>
+    /* styles.css */
+/* styles.css */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center align the content */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+</style>
+
+<body>
+    <div class="product">
+        <h2>Product Name</h2>
+        <p>Product description here.</p>
+        <button id="showPopup">Show Description</button>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <h2>Product Description</h2>
+            <img src="/assets/IMG-20230911-WA0019.jpg" alt="Product Image">
+            <p>Product description goes here.</p>
+        </div>
+    </div>
+
+    <script>
+        // script.js
+const showPopupButton = document.getElementById("showPopup");
+const closePopupButton = document.getElementById("closePopup");
+const popup = document.getElementById("popup");
+
+showPopupButton.addEventListener("click", () => {
+    popup.style.display = "block";
+});
+
+closePopupButton.addEventListener("click", () => {
+    popup.style.display = "none";
+});
+
+    </script>
+</body>
+</html>
