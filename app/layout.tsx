@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Total Textile SOlutions",
+  title: "Total Textile Solutions",
   description: "Dyeing and Finishing",
 };
 

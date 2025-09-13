@@ -1,6 +1,22 @@
+// app/page.tsx
+import Header from '@/components/Header';
+import Hero from '@/components/Hero';
+import VisionMission from '@/components/VisionMission';
+import Services from '@/components/Services';
+import Qualities from '@/components/Qualities';
+import CTA from '@/components/CTA';
+import Footer from '@/components/Footer';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <h1 className={`font-bold text-4xl`}>Total Textile Solutions</h1>
+    <div className="min-h-screen gradient-bg">
+      <Header />
+      <Hero />
+      <VisionMission />
+      <Services />
+      <Qualities />
+      <CTA />
+      <Footer />
+    </div>
   );
 }

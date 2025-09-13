@@ -1,181 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Inter;
-}
-
-@layer utilities {
-  .btn_white { 
-    @apply  border-white bg-white px-8 py-3 text-green-50
-  }
-  .btn_white_text  { 
-    @apply  border-white bg-white px-8 py-3 text-gray-90
-  }
-  .btn_green  { 
-    @apply  border-green-50 bg-green-50 px-8 py-5 text-white
-  }
-  .btn_dark_green { 
-    @apply  bg-green-90 px-8 py-4 text-white transition-all hover:bg-black
-  }
-  .btn_dark_green_outline  { 
-    @apply border-gray-20 bg-green-90 px-8 py-5 text-white
+@layer base {
+  * {
+    border-color: theme(colors.slate.200);
   }
   
-  .max-container {
-    @apply mx-auto max-w-[1440px];
+  body {
+    background-color: theme(colors.slate.50);
+    color: theme(colors.slate.900);
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
-
-  .padding-container {
-    @apply px-6 lg:px-20 3xl:px-0;
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: theme(fontWeight.bold);
+    color: theme(colors.slate.900);
   }
-
-  .flexCenter {
-    @apply flex items-center justify-center;
+  
+  h1 {
+    @apply text-4xl lg:text-5xl xl:text-6xl;
   }
-
-  .flexBetween {
-    @apply flex items-center justify-between;
+  
+  h2 {
+    @apply text-3xl lg:text-4xl xl:text-5xl;
   }
-
-  .flexStart {
-    @apply flex items-center justify-start;
+  
+  h3 {
+    @apply text-2xl lg:text-3xl;
   }
-
-  .flexEnd {
-    @apply flex items-center justify-end;
-  }
-
-  /* FONTS */
-  .regular-64 {
-    @apply text-[64px] font-[400] leading-[120%];
-  }
-
-  .regular-40 {
-    @apply text-[40px] font-[400] leading-[120%];
-  }
-
-  .regular-32 {
-    @apply text-[32px] font-[400];
-  }
-
-  .regular-24 {
-    @apply text-[24px] font-[400];
-  }
-
-  .regular-20 {
-    @apply text-[20px] font-[400];
-  }
-
-  .regular-18 {
-    @apply text-[18px] font-[400];
-  }
-
-  .regular-16 {
-    @apply text-[16px] font-[400];
-  }
-
-  .regular-14 {
-    @apply text-[14px] font-[400];
-  }
-
-  .medium-14 {
-    @apply text-[14px] font-[600];
-  }
-
-  .bold-88 {
-    @apply text-[88px] font-[700] leading-[120%];
-  }
-
-  .bold-64 {
-    @apply text-[64px] font-[700] leading-[120%];
-  }
-
-  .bold-52 {
-    @apply text-[52px] font-[700] leading-[120%];
-  }
-
-  .bold-40 {
-    @apply text-[40px] font-[700] leading-[120%];
-  }
-
-  .bold-32 {
-    @apply text-[32px] font-[700] leading-[120%];
-  }
-
-  .bold-20 {
-    @apply text-[20px] font-[700];
-  }
-
-  .bold-18 {
-    @apply text-[18px] font-[700];
-  }
-
-  .bold-16 {
-    @apply text-[16px] font-[700];
-  }
-
-  /* Hero */
-  .hero-map {
-    @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-60;
-  }
-
-  /* Camp */
-  .camp-quote {
-    @apply absolute -right-6 bottom-4 w-[140px] lg:bottom-10 xl:-right-8 xl:w-[186px] 3xl:right-0;
-  }
-
-  /* Feature */
-  .feature-phone {
-    @apply absolute top-[13%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex  3xl:left-20;
-  }
-
-  /* Get App */
-  .get-app {
-    @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-green-90 bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
+  
+  h4 {
+    @apply text-xl lg:text-2xl;
   }
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.hide-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-@keyframes tilt {
-  0%, 100% {
-    transform: rotate(0deg);
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5;
   }
-  50% {
-    transform: rotate(0.5deg);
+  
+  .btn-secondary {
+    @apply bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5;
   }
-}
-
-/* Add this in index.css or global styles */
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-html {
-  scroll-behavior: smooth;
+  
+  .btn-accent {
+    @apply bg-gradient-to-r from-cyan-500 to-teal-600 hover:from-cyan-600 hover:to-teal-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5;
+  }
+  
+  .btn-warm {
+    @apply bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-200;
+    border-color: theme(colors.slate.200);
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-br from-blue-50 via-white to-purple-50;
+  }
+  
+  .section-padding {
+    @apply py-16 lg:py-24;
+  }
+  
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  
+  .text-gradient-primary {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-accent {
+    @apply bg-gradient-to-r from-cyan-600 to-teal-600 bg-clip-text text-transparent;
+  }
+  
+  /* Line clamp utilities */
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-none {
+    display: block;
+    -webkit-line-clamp: none;
+    -webkit-box-orient: initial;
+    overflow: visible;
+  }
 }
