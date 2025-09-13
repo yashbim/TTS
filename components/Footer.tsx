@@ -40,9 +40,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contact Info</h4>
             <ul className="space-y-2 text-neutral-400">
-              <li>📍 Your Address Here</li>
-              <li>📞 +94 XX XXX XXXX</li>
-              <li>✉️ info@totaltextile.lk</li>
+              <li>📍 No. 182, Wanaluwawa, Kirindiwela, Sri Lanka</li>
+              <li>📞 +94 332 231 947</li>
+              <li>✉️ sales@tts2020.com / sales.tts2020@gmail.com</li>
               <li>🕒 Mon - Fri: 8AM - 5PM</li>
             </ul>
           </div>
